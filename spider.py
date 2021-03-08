@@ -19,6 +19,7 @@ def download(max_page, save_path, url):
             os.makedirs(save_path)
         with open(os.path.join(save_path, "%d.html" % i), 'wb') as f:
             f.write(response.content)
+            pass
 
 
 if __name__ == '__main__':
